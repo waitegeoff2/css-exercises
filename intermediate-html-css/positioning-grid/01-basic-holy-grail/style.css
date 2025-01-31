@@ -5,10 +5,18 @@ html {
 }
 
 .container {
+  display: grid;
+  grid-template: 100px 100px 500px 100px / 300px 900px;
   text-align: center;
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+  gap: 15px;
+  grid-template-areas: 
+    "header header"
+    "sidebar nav"
+    "sidebar article"
+    "footer footer";
 }
 
 .container div {
@@ -45,4 +53,28 @@ html {
   font-family: sans-serif;
   color: white;
   text-align: left;
+}
+
+.header {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.sidebar {
+  grid-area: 2 / 1 / 4 / 2;
+}
+
+.nav {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.article {
+  grid-area: article;
+}
+
+.footer {
+  grid-area: footer;
 }
