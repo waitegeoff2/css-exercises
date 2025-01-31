@@ -55,6 +55,8 @@ html {
   text-align: left;
 }
 
+/* SOLUTION BELOW, played around with different grid styles */
+
 .header {
   grid-column-start: 1;
   grid-column-end: 3;
