@@ -90,7 +90,7 @@
   font-weight: normal;
 }
 
-/* solution */
+/* SOLUTION BELOW!!! */
 
 .container {
   display: grid;
@@ -133,7 +133,6 @@
   grid-row: 2/4;
   display: grid;
   gap: 50px;
-  justify-content: center;
 }
 
 /* making a grid inside which holds the text content, then centers that */
