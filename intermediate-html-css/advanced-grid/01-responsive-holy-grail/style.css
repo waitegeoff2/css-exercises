@@ -62,15 +62,18 @@ html {
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
+  grid-area: header;
 }
 
 .sidebar {
   grid-area: 2 / 1 / 4 / 2;
+  grid-area: sidebar;
 }
 
 .nav {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+  grid-area: nav;
 }
 
 .article {
